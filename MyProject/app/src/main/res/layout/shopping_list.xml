@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1">
+
+    <ImageView
+        android:id="@+id/chicken"
+        android:layout_width="0dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="98dp"
+        android:onClick="showChicken"
+        app:layout_constraintEnd_toStartOf="@+id/pizza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chicken" />
+
+    <ImageView
+        android:id="@+id/pizza"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chicken"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chicken"
+        app:layout_constraintTop_toTopOf="@+id/chicken"
+        app:srcCompat="@drawable/pizza" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back2"
+        android:text="@string/listText"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="162dp"
+        android:text="@string/chickenText"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chicken" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/pizzaText"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/hotdog"
+        android:layout_width="0dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/call"
+        app:layout_constraintEnd_toStartOf="@+id/pork_cutlet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:srcCompat="@drawable/hotdog" />
+
+    <ImageView
+        android:id="@+id/pork_cutlet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hotdog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hotdog"
+        app:layout_constraintTop_toTopOf="@+id/hotdog"
+        app:srcCompat="@drawable/pork_cutlet" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="43dp"
+        android:text="@string/hotdogText"
+        app:layout_constraintEnd_toStartOf="@+id/sendEmail"
+        app:layout_constraintStart_toStartOf="@+id/call"
+        app:layout_constraintTop_toBottomOf="@+id/hotdog" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/cutletText"
+        app:layout_constraintEnd_toEndOf="@+id/pork_cutlet"
+        app:layout_constraintStart_toStartOf="@+id/pork_cutlet"
+        app:layout_constraintTop_toBottomOf="@+id/pork_cutlet" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/back3"
+        android:text="@string/call"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sendEmail"
+        app:layout_constraintEnd_toStartOf="@+id/sendEmail"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/back3"
+        android:text="@string/sendEmail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/googleMap"
+        app:layout_constraintStart_toEndOf="@+id/call" />
+
+    <Button
+        android:id="@+id/googleMap"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/back3"
+        android:text="@string/googleMap"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sendEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sendEmail" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back3"
+        android:text="주문내역"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/googleMap"
+        app:layout_constraintStart_toEndOf="@+id/call"
+        app:layout_constraintTop_toBottomOf="@+id/sendEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

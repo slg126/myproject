@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <string name="startText">final exam project</string>
+    <string name="startButton">go to shopping</string>
+    <string name="listText">List</string>
+    <string name="chickenText">치킨</string>
+    <string name="pizzaText">피자</string>
+    <string name="hotdogText">핫도그</string>
+    <string name="cutletText">돈까스</string>
+    <string name="call">전화연결</string>
+    <string name="sendEmail">메일발송</string>
+    <string name="googleMap">위치확인</string>
+    <string name="info">상세설명</string>
+</resources>

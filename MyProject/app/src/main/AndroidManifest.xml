@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyProject">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value = "AIzaSyCuF5xwq0MEHb9AHM4jiBJ4j491J7ynono">
+        </meta-data>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ShoppingList"/>
+        <activity android:name=".MyMap"/>
+        <activity android:name=".ChickenList2"/>
+        <activity android:name=".Chicken1"/>
+        <activity android:name=".Chicken2"/>
+        <activity android:name=".Chicken3"/>
+        <activity android:name=".PizzaList2"/>
+        <activity android:name=".Pizza1"/>
+        <activity android:name=".Pizza2"/>
+        <activity android:name=".Pizza3"/>
+        <activity android:name=".HotdogList2"/>
+        <activity android:name=".Hotdog1"/>
+        <activity android:name=".Hotdog2"/>
+        <activity android:name=".Hotdog3"/>
+        <activity android:name=".CutletList2"/>
+        <activity android:name=".Cutlet1"/>
+        <activity android:name=".Cutlet2"/>
+        <activity android:name=".Cutlet3"/>
+        <activity android:name=".MyRecord"/>
+
+
+    </application>
+
+</manifest>
